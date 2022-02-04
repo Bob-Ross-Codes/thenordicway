@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+        <link rel="stylesheet" href="https://use.typekit.net/tzz1ztd.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa428c36de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/gds5oyj.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>The Nordic Way</title>
+    <script> $(function(){
+        $('#nav').click(function() {
+          $(this).toggleClass('open');
+        });
+      });</script>
+    
+</head>
+
+<header>
+    <img src="img/logo.png" alt="Billede af logo">
+    <nav>     
+      
+        <ul class="navmenu">
+          <li><a href="valg-af-produkt.html" class="headertext">PRODUKTER</a></li>
+          <li><a href="hvad-er-seagreens.html" class="headertext">TANG</a></li>
+          <li><a href="om-os.html" class="headertext">OM&nbsp;OS</a></li>
+          <li><a href="#" class="headertext">KONTAKT</a></li>
+          <li><a href="#" class="Mobilkurv">KURV</a></li>
+            
+            <li><a href="#" class="Mobilkurv">KURV</a></li>
+            
+            <li ><a href="#" class="kurv"><svg xmlns="http://www.w3.org/2000/svg" width="30.429" height="33.766" viewBox="0 0 40.429 43.766">
+                <g id="Group_1" data-name="Group 1" transform="translate(-82 -14.183)">
+                  <g id="Rectangle_43" data-name="Rectangle 43" transform="translate(82 22.276)" fill="none" stroke-width="3">
+                    <path d="M3,0H37.429a3,3,0,0,1,3,3V27.673a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V3A3,3,0,0,1,3,0Z" stroke="none"/>
+                    <path d="M3,1.5H37.429a1.5,1.5,0,0,1,1.5,1.5V27.673a6.5,6.5,0,0,1-6.5,6.5H8a6.5,6.5,0,0,1-6.5-6.5V3A1.5,1.5,0,0,1,3,1.5Z" fill="none"/>
+                  </g>
+                  <path id="Path_12" data-name="Path 12" d="M915.763,30.76s-1.732-13.967,8.662-14.075,8.553,14.075,8.553,14.075" transform="translate(-822.23 -1)" fill="none"  stroke-width="3"/>
+                </g>
+              </svg>
+            </a></li>
+        </ul>
+       
+        <div class="burgermenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> 
+        
+
+        
+    </nav>
+    
+</header>
+<script src="javascript/funktioner.js"></script>
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOPPEN</button>
+<script>
+    //vis knappen
+    var mybutton = document.getElementById("myBtn");
+    
+    // når brugeren scroller 20px ned viser vi knappen
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // når brugeren klikker scroller vi til toppen
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+
+
+
+
+
+
+<body>
+  <section >
+    <article class="produkt-section">
+     
+    <div class="produkt-billede-container">
+
+      <div class="mySlides fade">
+        <img src="./img/Seagreens-Food-Caps-180-capsules.jpg" alt="seagreens produkt's indhold set ovenfra">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/Seagreens-Food-Caps-180-front.jpg" alt="seagreens produkt fra forsiden">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img/Seagreens-Food-Caps-180-back-right.jpg" alt="seagreens produkt fra bagsiden">
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+
+    
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+
+
+
+
+
+
+
+    <div class="parent-container">
+    <div class="produkt-tekst-container">
+      <h1 class="produkt-titel">FOOD CAPSULES</h1>
+      <h2 class="produkt-undertitel">PAKNINGSSTØRRLSE 180 KAPLSER (3,17 oz)</h2>
+      <h3 class="produkt-pris">499.95 kr</h3>
+        <div class="i-kurv"> 
+            
+          <div class="dropdown">
+              <button class="dropbtn">1 <svg xmlns="http://www.w3.org/2000/svg" width="14.687" height="9.251" viewBox="0 0 14.687 9.251">
+                <g id="Group_36" data-name="Group 36" transform="translate(1.413 1.413)">
+                  <line id="Line_1" data-name="Line 1" x2="5.931" y2="6.425" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="2"/>
+                  <line id="Line_2" data-name="Line 2" x1="5.931" y2="6.425" transform="translate(5.931)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="2"/>
+                </g>
+                </svg>
+              </button>
+            <div class="dropdown-content">
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+            </div>
+          </div>
+            <div><button class="produktkurv-knap">LÆG I KURV</button></div>
+        </div>
+        
+        
+
+
+
+    </div>
+    <div class="produkt-beskrivelse-container">
+        <p class="produkt-beskrivelse">
+              Fås også med 60 kapsler og
+              Som granulater
+        
+          <br>
+              Indeholder en unik blanding af fintmalet
+              lokal 
+          <br> 
+              vildt blærtang.
+              (2 capsler 1 gram)
+          <br>
+          <br>
+          <br>
+                Læs mere om produktet nedenfor
+        </p>
+    
+
+        <div>
+        <p class="produkt-tekst-bund">Produced by Seagreens Ltd, Great Britain</p>
+                <div class="mearker-produktside">
+                  <img src="./img/EU-Organic-Logo.png" alt="EU økologisk produkt godkendt">
+                  <img src="./img/KLBD-P.png" alt="KLBD-P godkendt">
+                  <img src="./img/USDA-Organic-Seal.png" alt="USDA godkendt">
+                  <img src="./img/Vegan-logo.png" alt="Vegan godkendt">
+                  <img src="./img/NFS-Logo-Horizontal.png" alt="NFS godkendt">
+                </div>
+        </div>
+
+    </div>
+  </div>
+  </article>
+
+
+  <article class="mere-info">
+    <h2 class="mere-info-h1">VIL DU VIDE MERE?</h2>
+    <div class="mere-info-dropdown-container">
+        <details class="details">
+            <summary class="summary">Indhold</summary>
+            <p class="details-tekst-p">Food Capsules contain a unique wholefood blend of finely 
+              milled Seagreens® native wild Wrack seaweeds Ascophyllum, 
+              Fucus and Pelvetia whose composition and health benefits 
+              Seagreens has studied and documented for over two decades. 
+              Vegetable capsules. Nothing added or extracted. Non-allergenic./p>
+        </details>
+
+        <details class="details">
+          <summary class="summary">Hvad gør det?</summary>
+      </details>
+
+      <details class="details">
+        <summary class="summary"> Hvordan bruges det </summary>
+        <p class="details-tekst-p">2 capsules (1 gram) each morning, preferably with first food or 
+          drink, contributes a balance of micronutrients to a normal 
+          daily diet. In older age and to address health conditions and nutrition 
+          deficiencies, professional advice may be helpful before using higher daily 
+          amounts. For children use half the amount. Safe in permanent daily use for 
+          any age and health condition.</p>
+    </details>
+
+    <details class="details">
+    <summary class="summary">Hvor det stammer fra?</summary>
+     
+      </details>
+
+      <details class="details">
+      <summary class="summary">Ernæringsprofil</summary>
+        
+      </details>
+    </div>
+  </article>
+
+
+</section>
+
+
+
+</body>
